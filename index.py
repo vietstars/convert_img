@@ -29,10 +29,10 @@ def get_string(img_path):
     #img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
 
     # Write the image after apply opencv to do some ...
-    cv2.imwrite(src_path + "optimizes/thres.png", img)
+    cv2.imwrite(src_path + "optimizes/optimize.png", img)
 
     # Recognize text with tesseract for python
-    result = pytesseract.image_to_string(Image.open(src_path + "optimizes/thres.png"))
+    result = pytesseract.image_to_string(Image.open(src_path + "optimizes/optimize.png"))
 
     # Remove template file
     #os.remove(temp)
