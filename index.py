@@ -42,6 +42,6 @@ def get_string(img_path):
 
 print ("--- read text from image ---")
 
-print ( get_string(src_path + "test.png") )
+print ( get_string(src_path + "test1.png") )
 
 print ("------ Done -------")
